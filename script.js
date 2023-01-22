@@ -34,7 +34,7 @@ function modulo(a, b)
 }
 
 //Create a function called operate, taking the operator in addition to two numbers
-//and determines which function it should call between (sum, addition, substraction, division).
+//and determines which operator function it should call.
 
 function operate(a, operator, b)
 {
@@ -51,5 +51,9 @@ function operate(a, operator, b)
             break;
         case "/":
             divide(a, b);
+            break;
+        case "%":
+            modulo(a, b);
+            break;
     }
 }

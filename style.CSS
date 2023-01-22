@@ -1,0 +1,57 @@
+.calculator 
+{
+    width: 300px;
+    height: 450px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 20px;
+    border: gray 10px solid;
+    background-color: blue;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.caldisplay
+{
+    width: 270px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: aqua;
+    padding: 10px;
+    font-size: x-large;
+    align-items: center;
+}
+
+
+.buttons
+{
+    margin-top: 200px;
+    margin: 10px;
+    width: 270px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+button
+{
+    text-align: center;
+    width: 21%; 
+    flex: 0 1 auto;
+    height: 50px;
+    font-size: xx-large;
+   
+}
+
+.equal
+{
+    width:;
+}
