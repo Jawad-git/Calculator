@@ -57,3 +57,7 @@ function operate(a, operator, b)
             break;
     }
 }
+
+                                        /* MAKING CODE THAT POPULATES THE DISPLAY WHEN BUTTONS ARE PRESSED*/
+
+printables = document.querySelectorAll

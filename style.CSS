@@ -17,20 +17,33 @@
 .caldisplay
 {
     width: 270px;
-    height: 50px;
+    height: 80px;
     border-radius: 10px;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
     background-color: aqua;
     padding: 10px;
     font-size: x-large;
-    align-items: center;
+}
+
+.head_text
+{
+    width: 100%;
+    align-items: flex-end;
+    font-size: x-large;
+}
+.result_text
+{
+    text-align: end;
+    width: 100%;
+    font-size: xx-large;
 }
 
 
 .buttons
 {
-    margin-top: 200px;
     margin: 10px;
     width: 270px;
     height: 300px;
@@ -44,7 +57,9 @@
 button
 {
     text-align: center;
-    width: 21%; 
+    border-radius: 15px;
+    border-color: silver;
+    width: 22%; 
     flex: 0 1 auto;
     height: 50px;
     font-size: xx-large;
@@ -53,5 +68,5 @@ button
 
 .equal
 {
-    width:;
+    width: 44%;
 }
