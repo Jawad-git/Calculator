@@ -28,13 +28,12 @@
     font-size: x-large;
 }
 
-.head_text
+.head
 {
     width: 100%;
-    align-items: flex-end;
     font-size: x-large;
 }
-.result_text
+.result
 {
     text-align: end;
     width: 100%;

@@ -58,6 +58,31 @@ function operate(a, operator, b)
     }
 }
 
-                                        /* MAKING CODE THAT POPULATES THE DISPLAY WHEN BUTTONS ARE PRESSED*/
+//Making function that clears calculator display when we press "AC".
+    const displaytop = document.querySelector('.head');
+    const displaybottom = document.querySelector('.result');
+    const fuckoff = document.querySelector('.clear');
+    console.log(fuckoff);
 
-printables = document.querySelectorAll
+    fuckoff.addEventListener('click', () => {
+        displaytop.innerHTML = '';
+        displaybottom.innerHTML = '';
+        // Not finished: reset the values
+    });
+
+
+//MAKING CODE THAT POPULATES THE DISPLAY WHEN BUTTONS ARE PRESSED
+
+function append(whatever)
+{
+    let child = document.createElement("span");
+    child.textContent = whatever;
+    displaytop.appendChild(child);
+}
+//rest is written as inline in html 
+    
+
+
+
+  //  let some = document.querySelector("body");
+   // some.textContent = 'whats going on';
