@@ -1,19 +1,19 @@
 //create a sum function.
 function sum(a, b)
 {
-    return a + b;
+    return Number(a) + Number(b);
 }
 
 //create a substraction function
 function subtract(a, b)
 {
-    return a - b;
+    return Number(a) - Number(b);
 }
 
 //create a multiply function
 function multiply(a, b)
 {
-    return a*b;
+    return Number(a) * Number(b);
 }
 
 //create a division function
@@ -22,15 +22,20 @@ function divide(a, b)
     if (b == 0)
     {
         alert("tried dividing by a 0! Big mistake chief");
-        return 1;
+        return 'error';
     }
-    return a / b;
+    return Number(a) / Number(b);
 }
 
 //create a modulo function
 function modulo(a, b)
 {
-    return a % b;
+    if (b == 0)
+    {
+        alert("tried dividing by a 0! Big mistake chief");
+        return 'error';
+    }
+    return Number(a) % Number(b);
 }
 
 //Create a function called operate, taking the operator in addition to two numbers
@@ -105,13 +110,15 @@ function append(whatever)
 //rest is written as inline in html 
     
 
-// trying out the calculation
+// Create a function to compute a single pair
 let o = 1;
 function computePair()
 {
     return operate(values[o-1], values[o], values[o+1]);
 }
 
+// Create a function to compute several pairs together, computing the first 3 values in the array
+// which are (number operator number) and then replacing the 3 values with their computed value
 function calculate()
 {
     while (values[o] != null && values[o+1] != null)
@@ -119,14 +126,17 @@ function calculate()
         let newresult = computePair();
         values.splice(0, 3, `${newresult}`);
     }
+    //if (i %)
     return values[o-1];
 }
 
 
-
+// make the equal button functional and it should output the result.
 const equal = document.querySelector(".equal");
 equal.addEventListener("click", () => {
+displaybottom.innerHTML = '';
 result = calculate();
+result = Number(result).toFixed(4);
 resulttext = document.createElement('span');
 resulttext.textContent = `${result}`;
 displaybottom.appendChild(resulttext); 

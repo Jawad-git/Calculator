@@ -1,3 +1,8 @@
+body
+{
+    background-color: silver;
+}
+
 .calculator 
 {
     width: 300px;
@@ -5,8 +10,7 @@
     margin: auto;
     margin-top: 100px;
     border-radius: 20px;
-    border: gray 10px solid;
-    background-color: blue;
+    background-color: black;
     padding: 15px;
     display: flex;
     flex-direction: column;
@@ -23,9 +27,10 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
-    background-color: aqua;
+    background-color: rgb(135, 192, 135);
     padding: 10px;
     font-size: x-large;
+    border: silver 2px solid;
 }
 
 .head
@@ -62,10 +67,22 @@ button
     flex: 0 1 auto;
     height: 50px;
     font-size: xx-large;
+    background-color: silver;
    
 }
 
 .equal
 {
     width: 44%;
+}
+
+
+.operator
+{
+    background-color: orange;
+}
+
+.command
+{
+    background-color: blue;
 }
