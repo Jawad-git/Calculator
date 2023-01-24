@@ -1,6 +1,9 @@
 body
 {
     background-color: silver;
+    display: flex;
+    flex-direction: column;
+    height: 800px;
 }
 
 .calculator 
@@ -85,4 +88,11 @@ button
 .command
 {
     background-color: blue;
+}
+
+.note
+{
+    margin: auto;
+    padding: 100px;
+    font-size: larger;
 }

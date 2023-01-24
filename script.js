@@ -131,10 +131,12 @@ function calculate()
 }
 
 
-// make the equal button functional and it should output the result.
+// make the equal button functional and it should output the result and make i = 0
+// so that we can reuse the calculator without clearing everything.
 const equal = document.querySelector(".equal");
 equal.addEventListener("click", () => {
 displaybottom.innerHTML = '';
+i = 0;
 result = calculate();
 result = Number(result).toFixed(4);
 resulttext = document.createElement('span');
