@@ -73,10 +73,10 @@ let comeon = 'whatever';
 //Making function that clears calculator display when we press "AC".
     const displaytop = document.querySelector('.head');
     const displaybottom = document.querySelector('.result');
-    const fuckoff = document.querySelector('.clear');
-    console.log(fuckoff);
+    const bye = document.querySelector('.clear');
+    console.log(bye);
 
-    fuckoff.addEventListener('click', () => {
+    bye.addEventListener('click', () => {
         displaytop.innerHTML = '';
         displaybottom.innerHTML = '';
         // Not finished: reset the values
